@@ -37,6 +37,9 @@ html {
     width: 100%;
 	height: 100%;
 }
+body {
+	overflow: hidden; /* prevents scrollbars from appearing */
+}
 
 body, p {
 	color: #53575a; 

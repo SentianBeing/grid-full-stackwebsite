@@ -12,12 +12,22 @@ window.onload = function () {
 };
 
 function scrollFunction() {
+	const navbar = document.getElementById("navbar");
+	const logo = document.querySelector(".logo-image img");
+
 	if (document.documentElement.scrollTop > 30) {
-		document.getElementById("navbar").classList.add("top-nav-collapse");
-	} else if ( document.documentElement.scrollTop < 30 ) {
-		document.getElementById("navbar").classList.remove("top-nav-collapse");
+		navbar.classList.add("top-nav-collapse");
+		if (logo) {
+			logo.src = "images/divegrid-logo.png"; // 👈 replace with your white logo path
+		}
+	} else {
+		navbar.classList.remove("top-nav-collapse");
+		if (logo) {
+			logo.src = "images/white-logo.png"; // 👈 replace with your default logo path
+		}
 	}
 }
+
 
 // Navbar on mobile
 let elements = document.querySelectorAll(".nav-link:not(.dropdown-toggle)");

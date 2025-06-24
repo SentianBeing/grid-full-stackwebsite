@@ -18,7 +18,7 @@
 	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Desi Webpage Title</title>
+    <title>Divegrid</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -27,6 +27,8 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/waves.css">
+
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -38,7 +40,7 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> 
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/white-logo.png" alt="alternative"></a> 
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href="index.html">Desi</a> -->
@@ -52,9 +54,17 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#header">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
+                    <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#services" id="servicesDropdown" role="button">
+    Services
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+    <li><a class="dropdown-item" href="#ai-automation">AI Automation</a></li>
+    <li><a class="dropdown-item" href="#web-development">Web Development</a></li>
+    <li><a class="dropdown-item" href="#ui-ux-design">UI/UX Design</a></li>
+    <li><a class="dropdown-item" href="#instagram-marketing">Instagram Marketing</a></li>
+  </ul>
+</li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
@@ -98,21 +108,62 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="h1-large">Creative Social Media Digital Agency</h1>
-                        <a class="btn-solid-lg" href="#introduction">Discover</a>
+                        
+                        <h1 class="h1-large">AI-Powered Automation & Design That Drives Growth</h1>
+                        <p class="p-">
+                        </p>
+                        <a class="btn-solid-lg" href="#introduction">Start a project</a>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of header-content -->
         
         <!-- Video Background -->
-        <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
-            <source src="images/header-background-video.mp4" type="video/mp4" />
-        </video>
+
+        <!-- <video autoplay loop muted id="video-background" poster="images/header-background.jpg" playsinline>
+            <source src="images/divegrid website background.mp4" type="video/mp4" />
+        </video> -->
+    
+        <section class="wave-background">
+         <div class="wave"></div>
+         <div class="wave"></div>
+         <div class="wave"></div>
+        </section>
         <!-- end of video background -->
 
     </header> <!-- end of header -->
     <!-- end of header -->
+
+     
+  
+    
+<div class="container py-6 mt-5">
+	<div class="row flex-lg-row-reverse align-items-center g-5">
+		<div class="col-10 mx-auto col-sm-8 col-lg-6">
+			<img src="https://images.unsplash.com/photo-1530435460869-d13625c69bbf?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTB8fHdlYnNpdGV8ZW58MHwwfHx8MTYyMTQ0NjkyNg&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=768" class="d-block mx-lg-auto img-fluid" alt="" loading="lazy">
+		</div>
+		<div class="col-lg-6">
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<h2 class="fw-bold display-5">We specialise in digital transformations</h2>
+				</div>
+			</div>
+
+			<div class="lc-block mb-3">
+				<div editable="rich">
+					<p class="lead"> DiveGrid is a Trivandrum-based tech company blending AI automation, custom website development, and UI/UX design. We empower startups and businesses with smart tools, growth marketing, and a powerful founder network to launch, grow, and scale</div>
+			</div>
+
+			<div class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"><a class="btn btn-primary px-4 me-md-2" href="#" role="button">Work With Us</a>
+				<a class="btn btn-outline-secondary px-4" href="#" role="button">Join Us</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+ 
+ 
+  
 
 
     <!-- Introduction -->
@@ -120,8 +171,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="h2-heading">Complete social media services</h2>
-                    <p class="p-heading">Increasing impression interested expression he my at. Respect invited request charmed me warrant to. Expect no more pretty as do though so genius afraid cousin</p>
+                    <h2 class="h2-heading">Core services</h2>
+                    <p class="p-heading" description="">Divegrid is the best at providing digital </p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -194,15 +245,212 @@
 		</div> <!-- end of area-2 -->
     </div> <!-- end of split -->
     <!-- end of details -->
-
+    
 
     <!-- Services 1 -->
     <div id="services" class="basic-1">
         <div class="container">
+            <div class="row justify-content-center text-center">
+        <div class="col-lg-12">
+            <h2 class="h2-heading" style="padding: 24px 0;">Core services</h2>
+            <p class="p-heading" description="">
+            </p>
+        </div> <!-- end of col -->
+    </div>
             <div class="row">
+
                 <div class="col-lg-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
+                    <div class="image-container d-flex justify-content-center align-items-center" style="background: #000; border-radius: 1rem; min-height: 340px;">
+                        <!-- From Uiverse.io by Subaashbala -->
+                        <div class="loader">
+                          <div class="modelViewPort">
+                            <div class="eva">
+                              <div class="head">
+                                <div class="eyeChamber">
+                                  <div class="eye"></div>
+                                  <div class="eye"></div>
+                                </div>
+                              </div>
+                              <div class="body">
+                                <div class="hand"></div>
+                                <div class="hand"></div>
+                                <div class="scannerThing"></div>
+                                <div class="scannerOrigin"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <style>
+                        /* From Uiverse.io by Subaashbala */
+                        .modelViewPort {
+                          perspective: 1000px;
+                          width: 20rem;
+                          aspect-ratio: 1;
+                          border-radius: 50%;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                          background: #000;
+                          overflow: hidden;
+                        }
+                        .eva {
+                          --EVA-ROTATION-DURATION: 4s;
+                          transform-style: preserve-3d;
+                          animation: rotateRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+                        }
+                        .head {
+                          position: relative;
+                          width: 6rem;
+                          height: 4rem;
+                          border-radius: 48% 53% 45% 55% / 79% 79% 20% 22%;
+                          background: linear-gradient(to right, white 45%, gray);
+                        }
+                        .eyeChamber {
+                          width: 4.5rem;
+                          height: 2.75rem;
+                          position: relative;
+                          left: 50%;
+                          top: 55%;
+                          border-radius: 45% 53% 45% 48% / 62% 59% 35% 34%;
+                          background-color: #0c203c;
+                          box-shadow: 0px 0px 2px 2px white, inset 0px 0px 0px 2px black;
+                          transform: translate(-50%, -50%);
+                          animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite alternate;
+                        }
+                        .eye {
+                          width: 1.2rem;
+                          height: 1.5rem;
+                          position: absolute;
+                          border-radius: 50%;
+                        }
+                        .eye:first-child {
+                          left: 12px;
+                          top: 50%;
+                          background: repeating-linear-gradient(
+                            65deg,
+                            #9bdaeb 0px,
+                            #9bdaeb 1px,
+                            white 2px
+                          );
+                          box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+                          transform: translate(0, -50%) rotate(-65deg);
+                        }
+                        .eye:nth-child(2) {
+                          right: 12px;
+                          top: 50%;
+                          background: repeating-linear-gradient(
+                            -65deg,
+                            #9bdaeb 0px,
+                            #9bdaeb 1px,
+                            white 2px
+                          );
+                          box-shadow: inset 0px 0px 5px #04b8d5, 0px 0px 15px 1px #0bdaeb;
+                          transform: translate(0, -50%) rotate(65deg);
+                        }
+                        .body {
+                          width: 6rem;
+                          height: 8rem;
+                          position: relative;
+                          margin-block-start: 0.25rem;
+                          border-radius: 47% 53% 45% 55% / 12% 9% 90% 88%;
+                          background: linear-gradient(to right, white 35%, gray);
+                        }
+                        .hand {
+                          position: absolute;
+                          left: -1.5rem;
+                          top: 0.75rem;
+                          width: 2rem;
+                          height: 5.5rem;
+                          border-radius: 40%;
+                          background: linear-gradient(to left, white 15%, gray);
+                          box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.25);
+                          transform: rotateY(55deg) rotateZ(10deg);
+                        }
+                        .hand:first-child {
+                          animation: compensateRotation var(--EVA-ROTATION-DURATION) linear infinite
+                            alternate;
+                        }
+                        .hand:nth-child(2) {
+                          left: 92%;
+                          background: linear-gradient(to right, white 15%, gray);
+                          transform: rotateY(55deg) rotateZ(-10deg);
+                          animation: compensateRotationRight var(--EVA-ROTATION-DURATION) linear
+                            infinite alternate;
+                        }
+                        .scannerThing {
+                          width: 0;
+                          height: 0;
+                          position: absolute;
+                          left: 60%;
+                          top: 10%;
+                          border-top: 180px solid #9bdaeb;
+                          border-left: 250px solid transparent;
+                          border-right: 250px solid transparent;
+                          transform-origin: top left;
+                          mask: linear-gradient(to right, white, transparent 35%);
+                          animation: glow 2s cubic-bezier(0.86, 0, 0.07, 1) infinite;
+                        }
+                        .scannerOrigin {
+                          position: absolute;
+                          width: 8px;
+                          aspect-ratio: 1;
+                          border-radius: 50%;
+                          left: 60%;
+                          top: 10%;
+                          background: #9bdaeb;
+                          box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+                          animation: moveRight var(--EVA-ROTATION-DURATION) linear infinite;
+                        }
+                        @keyframes rotateRight {
+                          from {
+                            transform: rotateY(0deg);
+                          }
+                          to {
+                            transform: rotateY(25deg);
+                          }
+                        }
+                        @keyframes moveRight {
+                          from {
+                            transform: translate(-50%, -50%);
+                          }
+                          to {
+                            transform: translate(-40%, -50%);
+                          }
+                        }
+                        @keyframes compensateRotation {
+                          from {
+                            transform: rotateY(55deg) rotateZ(10deg);
+                          }
+                          to {
+                            transform: rotatey(30deg) rotateZ(10deg);
+                          }
+                        }
+                        @keyframes compensateRotationRight {
+                          from {
+                            transform: rotateY(55deg) rotateZ(-10deg);
+                          }
+                          to {
+                            transform: rotateY(70deg) rotateZ(-10deg);
+                          }
+                        }
+                        @keyframes glow {
+                          from {
+                            opacity: 0;
+                          }
+                          20% {
+                            opacity: 1;
+                          }
+                          45% {
+                            transform: rotate(-25deg);
+                          }
+                          75% {
+                            transform: rotate(5deg);
+                          }
+                          100% {
+                            opacity: 0;
+                          }
+                        }
+                        </style>
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-5">
@@ -221,6 +469,7 @@
     <!-- Services 2 -->
     <div class="basic-2">
         <div class="container">
+            
             <div class="row">
                 <div class="col-lg-7">
                     <div class="image-container">
@@ -559,5 +808,7 @@
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.2/build/spline-viewer.js"></script>
+   
 </body>
 </html>

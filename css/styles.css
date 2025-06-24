@@ -38,7 +38,7 @@ html {
 	height: 100%;
 }
 body {
-	overflow: hidden; /* prevents scrollbars from appearing */
+	overflow-x: hidden; /* prevents scrollbars from appearing */
 }
 
 body, p {

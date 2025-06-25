@@ -32,10 +32,11 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
-body,html {
+body,
+html {
     width: 100%;
-	height: 100%; 
-	overflow-x: hidden !important;
+	height: 100%;
+	overflow-x: hidden;
 }
 
 body, p {
@@ -313,6 +314,8 @@ a:hover {
 }
 
 
+
+
 /**********************/
 /*     Navigation     */
 /**********************/
@@ -344,6 +347,7 @@ a:hover {
 	font-size: 1.875rem;
 	line-height: 1rem;
 	text-decoration: none;
+	
 }
 
 .offcanvas-collapse {
@@ -379,12 +383,13 @@ a:hover {
 	color: #eeeeee;
 	text-decoration: none;
 	transition: all 0.2s ease;
+	font-family: "Poppins", sans-serif;
 }
 
 .navbar .nav-item.dropdown.show .nav-link,
 .navbar .nav-item .nav-link:hover,
-.navbar .nav-item .nav-link.active {
-	color: #7dc22b;
+.navbar .nav-item {
+	color: #FF005E;
 }
 
 /* Dropdown Menu */
@@ -1507,3 +1512,65 @@ a:hover {
 .shape {
  fill: #0E1822;
 }
+
+
+/* Custom Bootstrap Button with SVG Icon */
+  .custom-bootstrap-btn {
+    position: relative;
+    overflow: hidden;
+    border-radius: 999px;
+    border: 2px solid #f9fafb;
+    background-color: #f9fafb;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+    z-index: 1;
+  }
+
+  .custom-bootstrap-btn:hover {
+    color: #f9fafb;
+  }
+
+  .custom-bootstrap-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FF005E;
+    border-radius: 999px;
+    transition: all 0.7s ease;
+    z-index: -1;
+  }
+
+  .custom-bootstrap-btn:hover::before {
+    left: 0;
+    transform: scale(1.5);
+  }
+
+  .custom-svg-icon {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #333;
+    border-radius: 999px;
+    padding: 0.3rem;
+    transform: rotate(40deg);
+    transition: transform 0.3s ease, background-color 0.3s ease, border 0.3s ease;
+  }
+
+  .custom-bootstrap-btn:hover .custom-svg-icon {
+    transform: rotate(90deg);
+    background-color: #f9fafb;
+    border: none;
+  }
+
+  .custom-svg-icon path {
+    fill: #333;
+  }
